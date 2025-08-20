@@ -1,0 +1,198 @@
+/* styles.css - External stylesheet for CSS Box Model Assignment */
+
+/* Basic reset and font setup for readability */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0; /* remove default margin */
+  padding: 0; /* remove default padding */
+}
+
+/* Container class to limit content width and center */
+.container {
+  max-width: 800px;
+  margin: 20px auto; /* centers container horizontally with vertical margin */
+  padding: 15px; /* inner spacing within the container */
+  background-color: #fff; /* white background for contrast */
+  border: 1px solid #ccc; /* light border to show boundary */
+  box-sizing: border-box; /* includes padding and border in width */
+}
+
+/* Header specific styles */
+.header {
+  background-color: #007acc; /* blue background */
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Navigation list styles */
+.nav-list {
+  list-style: none; /* remove bullets */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.nav-list li {
+  margin: 0 15px; /* horizontal spacing between nav items */
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  text-decoration: underline;
+}
+
+/* Section styles */
+.section {
+  margin-top: 30px; /* spacing between sections */
+}
+
+/* Styling the box that shows the box model */
+.box-model-demo .box {
+  background-color: #e0f7fa; /* light cyan background for content area */
+  border: 4px solid #00796b; /* thick teal border to visualize border */
+  padding: 20px; /* space inside border around content */
+  margin: 30px 0; /* space outside the border */
+  font-size: 1.1rem;
+  color: #004d40;
+  border-radius: 8px;
+}
+
+/* Button styling to practice colors, padding, border and margin */
+.styled-button {
+  background-color: #ff5722; /* deep orange background */
+  color: white;
+  border: none;
+  padding: 12px 25px; /* comfortable padding */
+  margin-top: 15px; /* space above button */
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #e64a19; /* darker orange on hover */
+}
+
+/* Footer styles */
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 50px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+/* --- New styles for tables --- */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse; /* collapse borders for clean look */
+  margin-top: 15px;
+}
+
+.styled-table thead {
+  background-color: #007acc; /* header row bg color */
+  color: white;
+}
+
+.styled-table th,
+.styled-table td {
+  border: 1px solid #ddd; /* border around each cell */
+  padding: 10px;
+  text-align: left;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* stripe effect for rows */
+}
+
+.styled-table tbody tr:hover {
+  background-color: #d1eaff; /* highlight row on hover */
+}
+
+/* --- New styles for lists --- */
+.custom-list {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.custom-list li {
+  margin-bottom: 8px;
+}
+
+/* --- New styles for sample media --- */
+.sample-image {
+  max-width: 100%; /* responsive image */
+  height: auto;
+  border: 3px solid #007acc;
+  border-radius: 6px;
+  margin-top: 15px;
+  display: block;
+}
+
+/* --- New styles for forms --- */
+.styled-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.styled-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #007acc;
+}
+
+.styled-form input[type="text"],
+.styled-form input[type="email"],
+.styled-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  resize: vertical; /* allow vertical resizing on textarea */
+  box-sizing: border-box; /* include padding in width */
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+/* Change border color when input or textarea is focused */
+.styled-form input[type="text"]:focus,
+.styled-form input[type="email"]:focus,
+.styled-form textarea:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 5px rgba(0, 122, 204, 0.5);
+}
+
+.styled-form button {
+  align-self: flex-start; /* align button left */
+}
+
+/* Responsive improvements */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-list li {
+    margin: 10px 0;
+  }
+}

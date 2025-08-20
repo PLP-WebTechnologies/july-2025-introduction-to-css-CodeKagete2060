@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Basics & The Box Model</title>
+  <!-- Link to the external CSS stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="container header">
+    <h1>Welcome to CSS Box Model Assignment</h1>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#boxmodel">Box Model</a></li>
+        <li><a href="#practice">Practice</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="intro" class="container section">
+    <h2>Introduction to CSS Basics</h2>
+    <p>This section introduces you to basic CSS styling and how the box model works to structure web page elements.</p>
+  </section>
+
+  <section id="boxmodel" class="container section box-model-demo">
+    <h2>Understanding The CSS Box Model</h2>
+    <p>The CSS Box Model is made up of margins, borders, padding, and the actual content. Let's apply styles to see it clearly.</p>
+    <div class="box">
+      This box demonstrates content, padding, borders, and margin.
+    </div>
+  </section>
+
+  <section id="practice" class="container section">
+    <h2>Practice Styling Elements</h2>
+    <p>Here we apply colors, spacing, borders, and backgrounds to demonstrate control over layout and appearance.</p>
+    <button class="styled-button">Click Me</button>
+
+    <!-- Adding tables -->
+    <h3>Sample Table</h3>
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Occupation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Anna Smith</td>
+          <td>28</td>
+          <td>Designer</td>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>34</td>
+          <td>Developer</td>
+        </tr>
+        <tr>
+          <td>Jane Williams</td>
+          <td>25</td>
+          <td>Writer</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Adding lists -->
+    <h3>Ordered List</h3>
+    <ol class="custom-list">
+      <li>HTML Basics</li>
+      <li>CSS Styling</li>
+      <li>JavaScript Introduction</li>
+    </ol>
+
+    <h3>Unordered List</h3>
+    <ul class="custom-list">
+      <li>Learn Flexbox</li>
+      <li>Practice Grid</li>
+      <li>Build Projects</li>
+    </ul>
+  </section>
+
+  <section id="media" class="container section">
+    <h2>Sample Media</h2>
+    <p>This image element shows how media can be styled and integrated into a webpage.</p>
+    <img class="sample-image" src="https://via.placeholder.com/600x300.png?text=Sample+Image" alt="Sample Placeholder Image" />
+  </section>
+
+  <section id="form" class="container section">
+    <h2>Sample Form</h2>
+    <p>Below is a basic HTML form styled with CSS demonstrating inputs and buttons.</p>
+    <form class="styled-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write your message"></textarea>
+
+      <button type="submit" class="styled-button">Submit</button>
+    </form>
+  </section>
+
+  <footer class="container footer">
+    <p>&copy; 2025 CSS Box Model Assignment</p>
+  </footer>
+
+</body>
+</html>
